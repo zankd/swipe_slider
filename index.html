@@ -1,0 +1,365 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@7/swiper-bundle.min.css">
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');    
+    
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section_howto {
+  position: relative;
+  width: 100%;
+  min-height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #00000;
+  overflow: hidden;
+}
+
+.swiper {
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.swiper-slide {
+  width: 300px;
+  height: 340px;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+  filter: blur(2px);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: self-start;
+}
+
+.swiper-slide-active {
+  filter: blur(0px);
+}
+
+.swiper-pagination-bullet,
+.swiper-pagination-bullet-active {
+  background: #fff;
+}
+
+.swiper-slide span {
+  text-transform: uppercase;
+  color: #fff;
+  background: #1b7402;
+  padding: 7px 18px 7px 25px;
+  display: inline-block;
+  border-radius: 0 20px 20px 0px;
+  letter-spacing: 2px;
+  font-size: 0.8rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.swiper-slide--one span {
+  background: #f7931a;
+}
+
+.swiper-slide--two span {
+  background: #f7931a;
+}
+
+.swiper-slide--three span {
+  background: #62688f;
+}
+
+.swiper-slide--four span {
+  background: #f7931a;
+}
+    
+.swiper-slide--five span {
+  background: #e83119;
+}
+    
+.swiper-slide--six span {
+  background: #3d86e8;
+}
+
+.swiper-slide--seven span {
+  background: #464bad;
+}
+   
+.swiper-slide--eight span {
+  background: #b45205;
+}
+    
+.swiper-slide--nine span {
+  background: #FF4500;
+}
+ 
+.swiper-slide--ten span {
+  background: #FF4500;
+}
+    
+.swiper-slide h2 {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  line-height: 1.4;
+  margin-bottom: 15px;
+  padding: 25px 45px 0 20px;
+}
+
+.swiper-slide p {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  padding: 0 25px 35px 25px;
+}
+  .swiper-slide a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+  }
+.swiper-slide svg {
+  color: #fff;
+  width: 22px;
+  height: 22px;
+  margin-right: 7px;
+}
+    
+.swiper-slide img {
+  margin-right: 15px;
+}    
+
+.swiper-slide--one {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url(https://trybitcoin.us/wp-content/uploads/2024/03/mondrian-bitcoin-logo.webp)
+      no-repeat 50% 50% / cover;
+}
+
+.swiper-slide--two {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url("https://trybitcoin.us/wp-content/uploads/2024/03/try-bitcoin-trading.webp")
+      no-repeat 50% 50% / cover;
+}
+
+.swiper-slide--three {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url("https://buybitcoin.bitcoinplanet.uk/wp-content/uploads/2023/06/ethereumeth.webp")
+      no-repeat 50% 50% / cover;
+}
+
+.swiper-slide--four {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url("https://trybitcoin.us/wp-content/uploads/2023/07/bitcoinbtc.webp")
+      no-repeat 50% 50% / cover;
+}
+
+.swiper-slide--five {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url("https://buybitcoin.bitcoinplanet.uk/wp-content/uploads/2023/06/ripplexrp.webp")
+      no-repeat 50% 50% / cover;
+}
+
+.swiper-slide--six {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url("https://trybitcoin.us/wp-content/uploads/2024/03/crypto-bitcoin-trading-bot-ai-automation.webp")
+      no-repeat 50% 50% / cover;
+}
+
+.swiper-slide--seven {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url("https://trybitcoin.us/wp-content/uploads/2024/03/defi-decentralized-finance-crypto.webp")
+      no-repeat 50% 50% / cover;
+}
+.swiper-slide--eight {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url("https://trybitcoin.us/wp-content/uploads/2024/03/web3-crypto-defi-eth.webp")
+      no-repeat 50% 50% / cover;
+}
+.swiper-slide--nine {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url("https://trybitcoin.us/wp-content/uploads/2024/03/defi-crypto-monero-btc.webp")
+      no-repeat 50% 50% / cover;
+}
+.swiper-slide--ten {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url("https://trybitcoin.us/wp-content/uploads/2024/03/nft-bitcoin-crypto-lesson-course.webp")
+      no-repeat 50% 50% / cover;
+}    
+.swiper-3d .swiper-slide-shadow-left,
+.swiper-3d .swiper-slide-shadow-right {
+  background-image: none;
+}
+</style>
+<section class="howto">
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide swiper-slide--one">
+          <a href="https://example.com/btc-101">
+        <span>BTC</span>
+        <div>
+          <h2>May the Crypto Be with You: A Newbie Hope</h2>
+          <p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox=".004 0 63.993 64" id="bitcoin"><path fill="#f7931a" d="M63.04 39.741c-4.274 17.143-21.638 27.575-38.783 23.301C7.12 58.768-3.313 41.404.962 24.262 5.234 7.117 22.597-3.317 39.737.957c17.144 4.274 27.576 21.64 23.302 38.784z"></path><path fill="#fff" d="M46.11 27.441c.636-4.258-2.606-6.547-7.039-8.074l1.438-5.768-3.512-.875-1.4 5.616c-.922-.23-1.87-.447-2.812-.662l1.41-5.653-3.509-.875-1.439 5.766c-.764-.174-1.514-.346-2.242-.527l.004-.018-4.842-1.209-.934 3.75s2.605.597 2.55.634c1.422.355 1.68 1.296 1.636 2.042l-1.638 6.571c.098.025.225.061.365.117l-.37-.092-2.297 9.205c-.174.432-.615 1.08-1.609.834.035.051-2.552-.637-2.552-.637l-1.743 4.02 4.57 1.139c.85.213 1.683.436 2.502.646l-1.453 5.835 3.507.875 1.44-5.772c.957.26 1.887.5 2.797.726L27.504 50.8l3.511.875 1.453-5.823c5.987 1.133 10.49.676 12.383-4.738 1.527-4.36-.075-6.875-3.225-8.516 2.294-.531 4.022-2.04 4.483-5.157zM38.087 38.69c-1.086 4.36-8.426 2.004-10.807 1.412l1.928-7.729c2.38.594 10.011 1.77 8.88 6.317zm1.085-11.312c-.99 3.966-7.1 1.951-9.083 1.457l1.748-7.01c1.983.494 8.367 1.416 7.335 5.553z"></path></svg>
+            BTC 101: Tales for Beginners
+          </p>
+        </div>
+      </div>
+    </a>
+      <div class="swiper-slide swiper-slide--two">
+      <a href="https://trybitcoin.us/learn/btc-101">
+        <span>BTC</span>
+        <div>
+          <h2>The Bitcoin Sequels: Strategist Strikes Back</h2>
+          <p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox=".004 0 63.993 64" id="bitcoin"><path fill="#f7931a" d="M63.04 39.741c-4.274 17.143-21.638 27.575-38.783 23.301C7.12 58.768-3.313 41.404.962 24.262 5.234 7.117 22.597-3.317 39.737.957c17.144 4.274 27.576 21.64 23.302 38.784z"></path><path fill="#fff" d="M46.11 27.441c.636-4.258-2.606-6.547-7.039-8.074l1.438-5.768-3.512-.875-1.4 5.616c-.922-.23-1.87-.447-2.812-.662l1.41-5.653-3.509-.875-1.439 5.766c-.764-.174-1.514-.346-2.242-.527l.004-.018-4.842-1.209-.934 3.75s2.605.597 2.55.634c1.422.355 1.68 1.296 1.636 2.042l-1.638 6.571c.098.025.225.061.365.117l-.37-.092-2.297 9.205c-.174.432-.615 1.08-1.609.834.035.051-2.552-.637-2.552-.637l-1.743 4.02 4.57 1.139c.85.213 1.683.436 2.502.646l-1.453 5.835 3.507.875 1.44-5.772c.957.26 1.887.5 2.797.726L27.504 50.8l3.511.875 1.453-5.823c5.987 1.133 10.49.676 12.383-4.738 1.527-4.36-.075-6.875-3.225-8.516 2.294-.531 4.022-2.04 4.483-5.157zM38.087 38.69c-1.086 4.36-8.426 2.004-10.807 1.412l1.928-7.729c2.38.594 10.011 1.77 8.88 6.317zm1.085-11.312c-.99 3.966-7.1 1.951-9.083 1.457l1.748-7.01c1.983.494 8.367 1.416 7.335 5.553z"></path></svg>
+            BTC 201: The Bitcoin Maestro
+          </p>
+        </div>
+     </a>        
+      </div>
+      <div class="swiper-slide swiper-slide--three">
+      <a href="https://trybitcoin.us/learn/btc-101">        
+        <span>ETH</span>
+        <div>
+          <h2>Decoding Ethereum: Smart Contract Universe</h2>
+          <p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 40 65" id="etherium"><g fill="none" fill-rule="evenodd"><g fill-rule="nonzero" transform="translate(-227 -93)"><g transform="translate(227 93)"><g><path fill="#8A92B2" d="M20.1.8v23.3c0 .1-.1.2-.2.2-.7.3-1.3.6-2 .9-.9.4-1.9.8-2.8 1.3L11.8 28l-2.7 1.2-3.3 1.5c-.9.4-1.8.8-2.8 1.3-.7.3-1.5.7-2.2 1-.1 0-.1.1-.2 0H.5c.3-.5.6-.9.9-1.4 1.6-2.7 3.3-5.4 4.9-8.1 1.7-2.9 3.5-5.8 5.2-8.7 1.6-2.7 3.2-5.4 4.8-8 1.2-2 2.4-3.9 3.5-5.9.2 0 .2-.1.3-.1-.1 0 0 0 0 0z"></path><path fill="#454A75" d="M39.5 33c-1.5 1-3.1 1.9-4.6 2.8-4.9 2.9-9.7 5.7-14.6 8.6-.1 0-.1.1-.2.1s-.1-.1-.1-.1v-.3-19.5-.3c0-.1.1-.1.2-.1.4.2.8.4 1.3.6 1.2.6 2.5 1.1 3.7 1.7 1.1.5 2.1 1 3.2 1.4 1.1.5 2.1 1 3.2 1.5.9.4 1.9.8 2.8 1.3.9.4 1.9.8 2.8 1.3.7.3 1.4.7 2.2 1 0-.1 0 0 .1 0z"></path><path fill="#8A92B2" d="M20.1 64.1s-.1 0 0 0c-.1 0-.1 0-.2-.1-2-2.8-3.9-5.5-5.9-8.3l-6-8.4c-1.9-2.7-3.9-5.4-5.8-8.2L.7 37c0-.1-.1-.1-.1-.2.1 0 .1.1.2.1 2.7 1.6 5.5 3.2 8.2 4.8 3.1 1.9 6.3 3.7 9.4 5.6.5.3 1.1.6 1.6.9.1 0 .1.1.1.2V64.1z"></path><path fill="gray" d="M.6 33s.1 0 0 0c.1 0 .1 0 0 0 0 .1 0 .1 0 0z"></path><path fill="#62688F" d="M.7 33.1c0-.1 0-.1 0 0 1-.5 2-.9 3-1.4l3.9-1.8c1-.5 2-.9 3-1.4 1.4-.7 2.9-1.3 4.3-2 1-.4 2-.9 3-1.3.7-.3 1.4-.6 2.1-1 .1 0 .1-.1.2-.1V44.5c-.1.1-.1 0-.2 0-.3-.2-.6-.3-.8-.5L.9 33.2c-.1-.1-.2-.1-.2-.1zM39.4 36.8c0 .1 0 .1-.1.2-5.8 8.2-11.6 16.3-17.4 24.5-.6.9-1.2 1.7-1.8 2.6V64v-.2-15.3-.3c1.3-.8 2.6-1.6 3.9-2.3l15.3-9c0-.1.1-.1.1-.1z"></path><path fill="#62688F" d="M20.1 24.2V24 1.1.9l19.2 31.8c.1.1.2.2.2.3-.4-.2-.8-.4-1.3-.6-.5-.2-1-.5-1.5-.7-.3-.1-.6-.3-1-.4-.5-.2-1.1-.5-1.6-.7-.3-.1-.6-.3-.9-.4l-2.1-.9c-.4-.2-.7-.3-1.1-.5-.5-.2-1-.5-1.5-.7-.3-.1-.6-.3-.9-.4l-2.1-.9c-.4-.2-.7-.3-1.1-.5-.5-.2-1-.5-1.5-.7-.3-.2-.7-.3-1-.5l-1.8-.9z"></path></g></g></g></g></svg>
+            From Novice to Jedi
+          </p>
+        </div>
+     </a>        
+      </div>
+      <div class="swiper-slide swiper-slide--four">
+      <a href="https://trybitcoin.us/learn/btc-101">        
+        <span>BTC</span>
+        <div>
+          <h2>Bitcoin Unleashed: Expert Strategies for 2024
+</h2>
+          <p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox=".004 0 63.993 64" id="bitcoin"><path fill="#f7931a" d="M63.04 39.741c-4.274 17.143-21.638 27.575-38.783 23.301C7.12 58.768-3.313 41.404.962 24.262 5.234 7.117 22.597-3.317 39.737.957c17.144 4.274 27.576 21.64 23.302 38.784z"></path><path fill="#fff" d="M46.11 27.441c.636-4.258-2.606-6.547-7.039-8.074l1.438-5.768-3.512-.875-1.4 5.616c-.922-.23-1.87-.447-2.812-.662l1.41-5.653-3.509-.875-1.439 5.766c-.764-.174-1.514-.346-2.242-.527l.004-.018-4.842-1.209-.934 3.75s2.605.597 2.55.634c1.422.355 1.68 1.296 1.636 2.042l-1.638 6.571c.098.025.225.061.365.117l-.37-.092-2.297 9.205c-.174.432-.615 1.08-1.609.834.035.051-2.552-.637-2.552-.637l-1.743 4.02 4.57 1.139c.85.213 1.683.436 2.502.646l-1.453 5.835 3.507.875 1.44-5.772c.957.26 1.887.5 2.797.726L27.504 50.8l3.511.875 1.453-5.823c5.987 1.133 10.49.676 12.383-4.738 1.527-4.36-.075-6.875-3.225-8.516 2.294-.531 4.022-2.04 4.483-5.157zM38.087 38.69c-1.086 4.36-8.426 2.004-10.807 1.412l1.928-7.729c2.38.594 10.011 1.77 8.88 6.317zm1.085-11.312c-.99 3.966-7.1 1.951-9.083 1.457l1.748-7.01c1.983.494 8.367 1.416 7.335 5.553z"></path></svg>
+             Bitcoin Whisperer
+          </p>
+        </div>
+     </a>        
+      </div>
+      <div class="swiper-slide swiper-slide--five">
+      <a href="https://trybitcoin.us/learn/btc-101">        
+        <span>ALTCOINS</span>
+        <div>
+          <h2>Altcoin Frontier: The Universal Guide</h2>
+          <p>
+<img src="https://s2.coinmarketcap.com/static/img/coins/64x64/5994.png" alt="Altcoins in 2024" width="48" height="48" />
+            Apprentice's Handbook
+          </p>
+        </div>
+     </a>        
+      </div>
+      <div class="swiper-slide swiper-slide--six">
+      <a href="https://trybitcoin.us/learn/btc-101">        
+  <span>Trading BOTS</span>
+  <div>
+    <h2>Automated Trading: Bot Chronicles</h2>
+    <p>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" id="robot" style="width: 48px; height: 48px;"><g><g><ellipse cx="24" cy="45.5" fill="#45413c" opacity=".15" rx="19.5" ry="1.5"></ellipse><path fill="#daedf7" d="M42 40.5c0 2.2-1.8 4-4 4H10c-2.2 0-4-1.8-4-4V27c0-9.9 8.1-18 18-18s18 8.1 18 18v13.5z"></path><path fill="#fff" d="M24 9C14.1 9 6 17.1 6 27v5c0-9.9 8.1-18 18-18s18 8.1 18 18v-5c0-9.9-8.1-18-18-18z"></path><path fill="none" stroke="#45413c" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M42 40.5c0 2.2-1.8 4-4 4H10c-2.2 0-4-1.8-4-4V27c0-9.9 8.1-18 18-18s18 8.1 18 18v13.5z"></path><path fill="#c0dceb" d="M30.5 44c0 1.1-.9 2-2 2h-9c-1.1 0-2-.9-2-2v-8c0-1.1.9-2 2-2h9c1.1 0 2 .9 2 2v8z"></path><path fill="#adc4d9" d="M17.5 38.5h13v2h-13z"></path><path fill="#adc4d9" stroke="#45413c" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M45.5 36.5l-3.5 2V26l3.5 2zM2.5 36.5l3.5 2V26l-3.5 2z"></path><path fill="none" stroke="#45413c" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M24 9c.2-1 2.5-8 10.5-6.7"></path><circle cx="36" cy="3.5" r="2.5" fill="#ff6242" stroke="#45413c" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"></circle><path fill="none" stroke="#45413c" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M30.5 44c0 1.1-.9 2-2 2h-9c-1.1 0-2-.9-2-2v-8c0-1.1.9-2 2-2h9c1.1 0 2 .9 2 2v8z"></path><path fill="#ff6242" stroke="#45413c" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M30.5 38.5h-13V36c0-1.1.9-2 2-2h9c1.1 0 2 .9 2 2v2.5z"></path><path fill="none" stroke="#45413c" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M33.5 11.8C30.7 10.1 27.5 9 24 9s-6.7 1-9.5 2.7V24h19V11.8z"></path><circle cx="32.5" cy="25" r="5" fill="#00dfeb" stroke="#45413c" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"></circle><circle cx="32.5" cy="25" r="2" fill="#627b8c" stroke="#45413c" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"></circle><circle cx="15.5" cy="25" r="5" fill="#00dfeb" stroke="#45413c" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"></circle><circle cx="15.5" cy="25" r="2" fill="#627b8c" stroke="#45413c" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"></circle></g></g></svg>
+      Novice to Mastermind
+    </p>
+  </div>
+     </a>        
+</div>
+      <div class="swiper-slide swiper-slide--seven">
+      <a href="https://trybitcoin.us/learn/btc-101">        
+        <span>DEFI</span>
+        <div>
+          <h2>To Boldly Trade Where No Coin Has Gone Before!</h2>
+          <p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 40 65" id="etherium"><g fill="none" fill-rule="evenodd"><g fill-rule="nonzero" transform="translate(-227 -93)"><g transform="translate(227 93)"><g><path fill="#8A92B2" d="M20.1.8v23.3c0 .1-.1.2-.2.2-.7.3-1.3.6-2 .9-.9.4-1.9.8-2.8 1.3L11.8 28l-2.7 1.2-3.3 1.5c-.9.4-1.8.8-2.8 1.3-.7.3-1.5.7-2.2 1-.1 0-.1.1-.2 0H.5c.3-.5.6-.9.9-1.4 1.6-2.7 3.3-5.4 4.9-8.1 1.7-2.9 3.5-5.8 5.2-8.7 1.6-2.7 3.2-5.4 4.8-8 1.2-2 2.4-3.9 3.5-5.9.2 0 .2-.1.3-.1-.1 0 0 0 0 0z"></path><path fill="#454A75" d="M39.5 33c-1.5 1-3.1 1.9-4.6 2.8-4.9 2.9-9.7 5.7-14.6 8.6-.1 0-.1.1-.2.1s-.1-.1-.1-.1v-.3-19.5-.3c0-.1.1-.1.2-.1.4.2.8.4 1.3.6 1.2.6 2.5 1.1 3.7 1.7 1.1.5 2.1 1 3.2 1.4 1.1.5 2.1 1 3.2 1.5.9.4 1.9.8 2.8 1.3.9.4 1.9.8 2.8 1.3.7.3 1.4.7 2.2 1 0-.1 0 0 .1 0z"></path><path fill="#8A92B2" d="M20.1 64.1s-.1 0 0 0c-.1 0-.1 0-.2-.1-2-2.8-3.9-5.5-5.9-8.3l-6-8.4c-1.9-2.7-3.9-5.4-5.8-8.2L.7 37c0-.1-.1-.1-.1-.2.1 0 .1.1.2.1 2.7 1.6 5.5 3.2 8.2 4.8 3.1 1.9 6.3 3.7 9.4 5.6.5.3 1.1.6 1.6.9.1 0 .1.1.1.2V64.1z"></path><path fill="gray" d="M.6 33s.1 0 0 0c.1 0 .1 0 0 0 0 .1 0 .1 0 0z"></path><path fill="#62688F" d="M.7 33.1c0-.1 0-.1 0 0 1-.5 2-.9 3-1.4l3.9-1.8c1-.5 2-.9 3-1.4 1.4-.7 2.9-1.3 4.3-2 1-.4 2-.9 3-1.3.7-.3 1.4-.6 2.1-1 .1 0 .1-.1.2-.1V44.5c-.1.1-.1 0-.2 0-.3-.2-.6-.3-.8-.5L.9 33.2c-.1-.1-.2-.1-.2-.1zM39.4 36.8c0 .1 0 .1-.1.2-5.8 8.2-11.6 16.3-17.4 24.5-.6.9-1.2 1.7-1.8 2.6V64v-.2-15.3-.3c1.3-.8 2.6-1.6 3.9-2.3l15.3-9c0-.1.1-.1.1-.1z"></path><path fill="#62688F" d="M20.1 24.2V24 1.1.9l19.2 31.8c.1.1.2.2.2.3-.4-.2-.8-.4-1.3-.6-.5-.2-1-.5-1.5-.7-.3-.1-.6-.3-1-.4-.5-.2-1.1-.5-1.6-.7-.3-.1-.6-.3-.9-.4l-2.1-.9c-.4-.2-.7-.3-1.1-.5-.5-.2-1-.5-1.5-.7-.3-.1-.6-.3-.9-.4l-2.1-.9c-.4-.2-.7-.3-1.1-.5-.5-.2-1-.5-1.5-.7-.3-.2-.7-.3-1-.5l-1.8-.9z"></path></g></g></g></g></svg>
+            Seasoned Crypto Jedi
+          </p>
+        </div>
+     </a>        
+      </div>
+      <div class="swiper-slide swiper-slide--eight">
+      <a href="https://trybitcoin.us/learn/btc-101">        
+        <span>WEB3</span>
+        <div>
+          <h2>To the Moon and Beyond: Web3 Crypto Odyssey</h2>
+          <p>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="56" height="56" viewBox="0 0 256 256" xml:space="preserve"><defs></defs>
+<g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
+	<path d="M 88.326 7.744 l -18.395 -3.09 c -1.762 -0.296 -3.003 1.686 -1.966 3.142 l 4.698 6.594 L 1.155 65.33 c -1.237 0.881 -1.525 2.598 -0.644 3.835 l 2.604 3.656 c 0.881 1.237 2.598 1.525 3.835 0.644 l 71.509 -50.94 l 4.812 6.755 c 1.037 1.455 3.315 0.931 3.612 -0.831 l 3.09 -18.395 C 90.155 8.962 89.419 7.928 88.326 7.744 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(175,185,210); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+	<path d="M 79.605 31.892 l -2.201 -3.09 l -11.778 8.39 V 87.25 c 0 1.519 1.231 2.75 2.75 2.75 h 8.782 c 1.519 0 2.75 -1.231 2.75 -2.75 V 32.256 C 79.807 32.134 79.698 32.022 79.605 31.892 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(120,210,190); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+	<path d="M 47.115 50.378 V 87.25 c 0 1.519 1.231 2.75 2.75 2.75 h 8.782 c 1.519 0 2.75 -1.231 2.75 -2.75 V 40.205 L 47.115 50.378 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(165,215,110); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+	<path d="M 28.604 63.565 V 87.25 c 0 1.519 1.231 2.75 2.75 2.75 h 8.782 c 1.519 0 2.75 -1.231 2.75 -2.75 V 53.392 L 28.604 63.565 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,195,110); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+	<path d="M 10.092 76.752 V 87.25 c 0 1.519 1.231 2.75 2.75 2.75 h 8.782 c 1.519 0 2.75 -1.231 2.75 -2.75 V 66.578 L 10.092 76.752 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(210,85,90); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+</g>
+</svg>
+            Crypto Voyagers
+          </p>
+        </div>
+     </a>        
+      </div>
+      <div class="swiper-slide swiper-slide--nine">
+      <a href="https://trybitcoin.us/learn/btc-101">        
+        <span>XMR</span>
+        <div>
+          <h2>Monero Warp Drive: Crypto Invisibility</h2>
+          <p>
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0,0,256,256">
+<defs><radialGradient cx="23.977" cy="24.322" r="19.904" gradientUnits="userSpaceOnUse" id="color-1_3s5uJPNeoda4_gr1"><stop offset="0" stop-color="#ffffff"></stop><stop offset="0.679" stop-color="#f2f2f2"></stop><stop offset="1" stop-color="#cccccc"></stop></radialGradient><linearGradient x1="15.558" y1="23.452" x2="36.877" y2="49.75" gradientUnits="userSpaceOnUse" id="color-2_3s5uJPNeoda4_gr2"><stop offset="0" stop-color="#889097"></stop><stop offset="1" stop-color="#64717c"></stop></linearGradient><linearGradient x1="13.641" y1="5.9" x2="30.62" y2="34.751" gradientUnits="userSpaceOnUse" id="color-3_3s5uJPNeoda4_gr3"><stop offset="0" stop-color="#fc7d5b"></stop><stop offset="0.06" stop-color="#f8734f"></stop><stop offset="0.18" stop-color="#f3653d"></stop><stop offset="0.326" stop-color="#f05b31"></stop><stop offset="0.523" stop-color="#ee552a"></stop><stop offset="1" stop-color="#ed5328"></stop></linearGradient></defs><g fill-opacity="0" fill="#dddddd" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,256v-256h256v256z" id="bgRectangle"></path></g><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.53333,5.53333)"><path d="M43.285,30h-6.285v-15.622c0,-0.445 -0.539,-0.669 -0.854,-0.354l-12.146,12.147l-12.146,-12.146c-0.315,-0.315 -0.854,-0.092 -0.854,0.353v15.622h-6.203c0.429,1.407 1.015,2.743 1.726,4h7.977c0.276,0 0.5,-0.224 0.5,-0.5v-10.671l8.646,8.646c0.195,0.195 0.512,0.195 0.707,0l8.647,-8.646v10.671c0,0.276 0.224,0.5 0.5,0.5h8.06c0.711,-1.257 1.296,-2.593 1.725,-4z" fill="url(#color-1_3s5uJPNeoda4_gr1)"></path><path d="M33.5,34c-0.276,0 -0.5,-0.224 -0.5,-0.5v-10.671l-8.646,8.646c-0.195,0.195 -0.512,0.195 -0.707,0l-8.647,-8.646v10.671c0,0.276 -0.224,0.5 -0.5,0.5h-7.978c3.454,6.111 9.999,10.244 17.519,10.244c7.52,0 14.065,-4.133 17.519,-10.244z" fill="url(#color-2_3s5uJPNeoda4_gr2)"></path><path d="M11,30v-15.622c0,-0.445 0.539,-0.669 0.854,-0.354l12.146,12.147l12.146,-12.146c0.315,-0.315 0.854,-0.092 0.854,0.353v15.622h6.285c0.568,-1.86 0.878,-3.832 0.878,-5.878c0,-11.112 -9.01,-20.122 -20.122,-20.122c-11.112,0 -20.122,9.01 -20.122,20.122c0,2.046 0.31,4.018 0.878,5.878z" fill="url(#color-3_3s5uJPNeoda4_gr3)"></path></g></g>
+</svg>
+            Stealth Masters
+          </p>
+        </div>
+     </a>        
+      </div>
+      <div class="swiper-slide swiper-slide--ten">
+      <a href="https://trybitcoin.us/learn/btc-102">        
+        <span>NFT</span>
+        <div>
+          <h2>Pixel Pioneers: Adventures in the Crypto Multiverse</h2>
+          <p>
+            <svg height="200px" width="200px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-6.4 -6.4 76.80 76.80" xml:space="preserve" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0" transform="translate(0,0), scale(1)"><rect x="-6.4" y="-6.4" width="76.80" height="76.80" rx="38.4" fill="#ee4811" strokewidth="0"></rect></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#0000" stroke-width="1.152"></g><g id="SVGRepo_iconCarrier"> <style type="text/css"> .st0{fill:#E0E0D1;} .st1{opacity:0.2;} .st2{fill:#231F20;} .st3{fill:#E0995E;} .st4{fill:#C75C5C;} .st5{fill:#F5CF87;} .st6{fill:#76C2AF;} .st7{fill:#FFFFFF;} .st8{fill:#4F5D73;} </style> <g id="Layer_1"> <g> <circle class="st0" cx="31.8" cy="32" r="32"></circle> </g> <g class="st1"> <path class="st2" d="M32,12c-8.5,0-18,5.4-21.1,15.7c-1.6,5.2,5.2,3.1,5.6,9.2c0.4,4.9-1.1,6.6-1.4,9.6c-0.4,4,8.9,10,17.2,9.6 C44.6,55.4,54,46.3,54,34S44.3,12,32,12z M24,48c-2.2,0-4-1.8-4-4c0-2.2,1.8-4,4-4s4,1.8,4,4C28,46.2,26.2,48,24,48z"></path> </g> <g> <path class="st3" d="M32,10c-8.5,0-18,5.4-21.1,15.7c-1.6,5.2,5.2,3.1,5.6,9.2c0.4,4.9-1.1,6.6-1.4,9.6c-0.4,4,8.9,10,17.2,9.6 C44.6,53.4,54,44.3,54,32S44.3,10,32,10z M24,46c-2.2,0-4-1.8-4-4c0-2.2,1.8-4,4-4s4,1.8,4,4C28,44.2,26.2,46,24,46z"></path> </g> <g class="st1"> <circle class="st2" cx="20.7" cy="25" r="4"></circle> </g> <g class="st1"> <circle class="st2" cx="32" cy="19.6" r="4"></circle> </g> <g class="st1"> <circle class="st2" cx="43.2" cy="24.7" r="4"></circle> </g> <g class="st1"> <circle class="st2" cx="46.2" cy="37.3" r="4"></circle> </g> <g class="st1"> <circle class="st2" cx="37.1" cy="47.1" r="4"></circle> </g> <g> <circle class="st4" cx="20.7" cy="23" r="4"></circle> </g> <g> <circle class="st5" cx="32" cy="17.6" r="4"></circle> </g> <g> <circle class="st6" cx="43.2" cy="22.7" r="4"></circle> </g> <g> <circle class="st7" cx="46.2" cy="35.3" r="4"></circle> </g> <g> <circle class="st8" cx="37.1" cy="45.1" r="4"></circle> </g> </g> <g id="Layer_2"> </g> </g></svg>
+            Cosmic Padawan
+          </p>
+        </div>
+      </div>   
+     </a>        
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+</section_howto>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@7/swiper-bundle.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var swiper = new Swiper(".swiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 0,
+          stretch: 0,
+          depth: 100,
+          modifier: 3,
+          slideShadows: true
+        },
+        keyboard: {
+          enabled: true
+        },
+        mousewheel: {
+          thresholdDelta: 60
+        },
+        spaceBetween: 70,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true
+        }
+      });
+    });
+  </script>
